@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>王占京的个人主页</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<meta name="keywords" content="" />-->
+
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+			
+			//滚动到坐标（0，1）位置 
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		
+	</head>
+
+	<body>
+
+		<!--导航栏-->
+		<div class="header-home">
+			<div class="container">
+				<div>
+					<div class="h_menu4">
+						<!-- start h_menu4 -->
+						<a class="toggleMenu" href="#">王占京</a>
+						<ul class="nav">
+							<li class="active">
+								<a href="#home" class="scroll">首页</a>
+							</li>
+							<li>
+								<a href="#introduction" class="scroll">个人简介</a>
+							</li>
+							<li>
+								<a href="#learn" class="scroll">证书荣誉</a>
+							</li>
+							<li>
+								<a href="#skill" class="scroll">专业技能</a>
+							</li>
+							<li>
+								<a href="#practice" class="scroll">专业实践</a>
+							</li>
+							<li>
+								<a href="#career" class="scroll">自我评价</a>
+							</li>
+						</ul>
+						<script type="text/javascript" src="js/nav.js"></script>
+						
+						<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event) {
+									event.preventDefault();//阻止元素发生默认的行为
+									//滚动到指定锚位置
+									$('html,body').animate({
+										scrollTop: $(this.hash).offset().top-40
+									}, 500);
+								});
+							});
+						</script>
+				
+						<!--被选菜单高亮-->
+						<script>
+							$(document).ready(function() {
+								$(".nav li a").click(function() {
+									$(this).parent().addClass("active");//被选中的高亮
+									$(this).parent().siblings().removeClass("active");
+								});
+							});
+						</script>
+						<!--被选菜单高亮结束-->
+						
+						<!-- 导航栏不动 -->
+						<script>
+							$(document).ready(function() {
+								var navoffeset = $(".header-home").offset().top;
+								$(window).scroll(function() {
+									var scrolltpos = $(window).scrollTop();
+									if(scrolltpos >= navoffeset) {
+										$(".header-home").addClass("fixed");
+									} else {
+										$(".header-home").removeClass("fixed");
+									}
+								});
+
+							});
+						</script>
+						<!-- 导航栏不动结束 -->
+					</div>
+					<!-- end h_menu4 -->
+				</div>
+			</div>
+		</div>
+		<!--导航栏结束-->
+		<!-- 顶部 -->
+		<div class="header" id="home">
+			<div class="container">
+				<div class="logo">
+					<a target="_blank" href="https://github.com/imjinghun" class="lianjie" title="GitHub主页">
+						<img style="width: 10%;height: 10%;" src="images/github.png" alt="" />
+					</a>
+					<a target="_blank" href="http://www.cnblogs.com/jinghun/" class="lianjie"  title="我的博客">
+						<img style="width: 10%;height: 10%;" src="images/bokeyuan.png" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--顶部结束-->
+		<!--主页面-->
+		<div class="main" style="background-color:#46B8DA;line-height: 2em;letter-spacing: 0.1em;">
+		
+		    <div class="container" style="background-color:#bfe7f2">
+				<div id="introduction">
+					<h1 class="tz-title-2"><span style="color:black">个人简介</span></h1>
+					<div class="container-fluid">
+						<div class="span12">
+							<div style="width: 85%;margin:1.2em auto;padding: 2em 0em;background-color: #edf7f7;">
+							<table class="tables" style="background-color: #edf7f7;">
+								<tr class="trhead">
+									<td style="font-weight: bold;font-size: 1.4em;font-family: '宋体';" colspan="4">
+										-- 基本信息 --
+									</td>
+								</tr>
+								<tr class="trbody">
+									<td class="tdleft" width="25%">
+										姓名:
+									</td>
+									<td width="20%">
+										王占京
+									</td>
+									<td class="tdleft" width="20%">
+										邮箱:
+									</td>
+									<td width="35%">
+										dykxjing@163.com
+									</td>
+								</tr>
+								<tr class="trbody">
+									<td class="tdleft">
+										性别:
+									</td>
+									<td>
+										男
+									</td>
+									<td class="tdleft">
+										学历:
+									</td>
+									<td>
+										本科
+									</td>
+								</tr>
+								<tr class="trbody">
+									<td class="tdleft">
+										年龄:
+									</td>
+									<td>
+										21
+									</td>
+									<td class="tdleft">
+										毕业院校:
+									</td>
+									<td>
+										石家庄铁道大学
+									</td>
+								</tr>
+								<tr class="trbody">
+									<td class="tdleft">
+										籍贯:
+									</td>
+									<td>
+										河北省邢台市
+									</td>
+									<td class="tdleft">
+										专业:
+									</td>
+									<td>
+										软件工程
+									</td>
+								</tr>
+								<tr class="trbody">
+									<td class="tdleft">
+										爱好:
+									</td>
+									<td>
+										健身、篮球、音乐
+									<td class="tdleft">
+										政治面貌:
+									</td>
+									<td>
+										团员
+									</td>
+								</tr>
+							</table>
+						
+							<table class="tables" >
+								<tr class="trhead" align="left">
+									<td style="font-weight: bold;font-size: 1.4em;font-family: '宋体';" colspan="3">
+										-- 教育背景 --
+									</td>
+								</tr>
+								<tr class="trbody" align="center">
+									<td  width="">
+										2014.09-至今
+									</td>
+									<td width="20%">
+										石家庄铁道大学
+									</td>
+									<td  width="">
+										软件工程专业（本科）
+									</td>
+								</tr>
+								<tr class="trbody"></tr>
+								<tr class="trbody">
+									<td  colspan="3" style="padding-left: 8%;font-family: '微软雅黑';">
+										专业任选课：WEB应用开发技术、UNIX/LINUX基础、JAVA语言、.NET程序设计、ORACLE数据库、JAVA EE架构程序设计、
+										软件开发案例分析、信息系统分析应用、软件企业文化、服务器系统管理、移动应用开发技术<br /><br/>
+										专业必修课：算法与数据结构、计算机网络、信息科学与技术导论、离散数学、C语言及面向对象程序设计、专业英语、
+										操作系统、软件工程概论、软件测试技术、数据库原理、人机交互、软件体系结构、软件需求与分析、软件过程与管理、
+										统一建模语言、软件构造、软件设计
+									</td>
+									
+								</tr>
+							</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="background-color:#bfe7f2;margin-top:10px;">
+				<div id="learn">
+					<h1 class="tz-title-2"><span style="color:black">证书荣誉</span></h1>
+					<div class="container-fluid" >
+						<div class="span12" >
+							<div style="width: 85%;margin:1.2em auto;padding: 2em 0em;background-color: #edf7f7;">
+								<ul class="myul">
+									<li>大学英语四级证书</li>
+									<li>普通话二级甲等</li>
+									<li>校级程序设计大赛一等奖</li>
+									<li>2014-2015学年国家励志奖学金</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="background-color:#bfe7f2;margin-top:10px;">
+				<div class="skill" id="skill">
+					<h1 class="tz-title-2"><span style="color: black">专业技能</span></h1>
+					<div class="container-fluid" >
+						<div class="span12">
+							<div style="width: 85%;margin:auto;">
+								<!--前端技能-->
+								<table class="table2" style="background-color: #ebfafa;">
+									<tr>
+										<td rowspan="5" class="trhead2" width="4%">前<br/>端</td>
+										<td width="24%">HTML</td>
+										<td width="24%">熟练使用</td>
+										<td width="24%">jQuery</td>
+										<td width="24%">一般熟练</td>
+									</tr>
+									<tr>
+										<td>CSS</td>
+										<td>熟练使用</td>
+										<td>AJAX</td>
+										<td>熟练使用</td>
+									</tr>
+									<tr>
+										<td>JavaScript</td>
+										<td>熟练使用</td>
+										<td>JSON</td>
+										<td>一般熟练</td>
+									</tr>
+									<tr>
+										<td>Bootstrap</td>
+										<td>简单应用</td>
+										<td>layui</td>
+										<td>简单应用</td>
+									</tr>
+									<tr>
+										<td>MINA(小程序框架)</td>
+										<td>一般熟练</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+								
+								<!--后端技能-->
+								<table class="table2" style="background-color: #edf8f8;">
+									<tr>
+										<td width="24%">Jsp</td>
+										<td width="24%">熟练使用</td>
+										<td width="24%">PHP</td>
+										<td width="24%">了解</td>
+										<td rowspan="4" class="trhead2" width="4%">后<br/>端</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>熟练使用</td>
+										<td>Python</td>
+										<td>简单使用</td>
+									</tr>
+									<tr>
+										<td>C语言</td>
+										<td>一般熟练</td>
+										<td>C++</td>
+										<td>一般熟练</td>
+									</tr>
+									<tr>
+										<td>C#</td>
+										<td>一般熟练</td>
+										<td>Hadoop</td>
+										<td>简单运用</td>
+									</tr>
+								</table>
+							
+								<!--数据库技能-->
+								<table class="table2" style="background-color: #ebfafa;">
+									<tr>
+										<td rowspan="2" class="trhead2" width="4%">数<br/>据<br/>库</td>
+										<td width="24%">MySQL</td>
+										<td width="24%">熟练使用</td>
+										<td width="24%">SQL Server</td>
+										<td width="24%">熟练使用</td>
+									</tr>
+									<tr>
+										<td>Oracle</td>
+										<td>简单使用</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+								
+								<!--其他技能-->
+								<table class="table2" style="background-color: #edf8f8;">
+									<tr>
+										<td width="24%">MVC</td>
+										<td width="24%">掌握其原理，能够灵活运用</td>
+										<td width="24%">SSH</td>
+										<td width="24%">熟练使用</td>
+										<td rowspan="4" class="trhead2" width="4%">其<br/>他</td>
+									</tr>
+									<tr>
+										<td>Linux</td>
+										<td>掌握基本命令，基本操作</td>
+										<td>Photoshop</td>
+										<td>简单操作使用</td>
+									</tr>
+									<tr>
+										<td>Dreamweaver</td>
+										<td>一般熟练</td>
+										<td>Flash</td>
+										<td>简单操作使用</td>
+									</tr>
+									<tr>
+										<td>Office办公软件</td>
+										<td>熟练使用</td>
+										<td>Git</td>
+										<td>熟练使用</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="background-color:#bfe7f2;margin-top:10px;">
+				<div class="practice" id="practice">
+					<h1 class="tz-title-2"><span style="color: black">专业实践</span></h1>
+					<div class="container-fluid" >
+						<div class="span12" >
+							<div style="width: 85%;margin:1.2em auto;padding: 2em 0em;background-color: #edf7f7;">
+								<ul class="myul">
+									<li>使用C#做过C/S架构的进销存系统软件</li>
+									<li>使用Java做过多个Java web系统</li>
+									<li>大三暑假在天津甲骨文分公司做Hadoop大数据实训，二次开发视频网站</li>
+									<li>目前正在跟着老师做一个大数据的项目</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="background-color:#bfe7f2;margin-top:10px;">
+				<div class="career" id="career">
+					<h1 class="tz-title-2"><span style="color: black">自我评价</span></h1>
+					<div class="container-fluid" >
+						<div class="span12" >
+							<div style="width: 85%;margin:1.2em auto;padding: 2em 0em;background-color: #edf7f7;">
+								<table style="font-family: '微软雅黑';font-size:1.2em;line-height: 2em;margin: 2em;">
+									<tr>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;本人诚实守信，做事认真负责，能够吃苦耐劳，拥有积极向上的生活态度和兴趣爱好。
+											自我感觉本身最大优点是做事有耐心，能够坚持下去。
+											在工作中能够发现并解决问题，有良好的团队合作精神，热爱IT、互联网行业，
+											具备一定的专业知识技能，能够发挥自身价值，为公司创造利益。
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--版权-->
+				<div class="copy">
+					<p style="color:black">
+					<script type="text/javascript">
+						copyright=new Date();//取得当前的日期
+						update=copyright.getFullYear();//取得当前的年份
+						document.write("&copy; 2017-"+ update + " 王占京 All rights reserved.");//update为自动更新的年份
+					</script>
+					
+						<a href="https://imjinghun.github.io/" style="color: #ce6d17;font-weight: bold;">我的主页</a>
+					</p>
+				</div>
+				<!--版权结束-->
+				<!--回到顶部图标显示设置 （当前为非顶部时显示）-->
+				<script type="text/javascript">
+					$(document).ready(function() {
+							/*var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};*/
+
+						$().UItoTop({
+							easingType: 'easeOutQuart'
+						});
+
+					});
+				</script>
+				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	</body>
+	
+</html>
+	<!--主页面结束-->
