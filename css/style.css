@@ -14,7 +14,8 @@ body a{
 	-o-transition: 0.5s all;
 }
 .header {
-  background: url(../images/banner3.png) no-repeat center top;
+  /*background: url(../images/banner3.png) no-repeat center top;*/
+  background-color:rgba(51,204,204,0.6);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +24,7 @@ body a{
 }
 .logo{
 	text-align:left;
-	margin-top:10%;
+	margin-top:5%;
 }
 /* start h_menu */
 .toggleMenu {
@@ -1069,5 +1070,5 @@ ul.news_list li.date_desc h5 {
 
 a.lianjie{
 	text-decoration: none;
-	margin: 2em;
+	margin: 3%;
 }
